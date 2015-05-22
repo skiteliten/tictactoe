@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic tac toe</title>
+    <style type="text/css">
+        #gamearea {
+            margin: 32px;
+        }
+
+        #board {
+            display:block;
+            overflow:hidden;
+            float:left;
+            border-top: solid 1px #000;
+            border-left: solid 1px #000;
+            margin-right: 32px;
+        }
+
+        .row {
+            clear: both;
+        }
+        .square {
+            height: 64px;
+            width: 64px;
+            background: #EFEFEF;
+            border-right: solid 1px #000;
+            border-bottom: solid 1px #000;
+            float: left;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        #score {
+            height: 192px;
+            width: 192px;
+            background: #EFEFEF;
+            border: solid 1px #000;
+            display:block;
+            overflow: hidden;
+            top: 32px;
+        }
+
+        .player {
+            width: 192px;
+            height: 96px;
+            display: block;
+            overflow: hidden;
+            border-bottom: solid 1px #000;
+        }
+
+        .playing {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="gamearea">
+        <div id="board">
+            <div id="row0" class="row">
+                <div id="square-00" class="square"></div>
+                <div id="square-01" class="square"></div>
+                <div id="square-02" class="square"></div>
+            </div>
+            <div id="row1" class="row">
+                <div id="square-10" class="square"></div>
+                <div id="square-11" class="square"></div>
+                <div id="square-12" class="square"></div>
+            </div>
+            <div id="row2" class="row">
+                <div id="square-20" class="square"></div>
+                <div id="square-21" class="square"></div>
+                <div id="square-22" class="square"></div>
+            </div>
+        </div>
+
+        <div id="score">
+            <div id="player-red" class="player playing">Player0</div>
+            <div id="player-blue" class="player">Player1</div>
+        </div>
+        <button id="restart" type="button">Restart game</button>      
+    </div>
+    <script src="utils.js"></script>
+
+</body>
